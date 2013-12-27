@@ -190,7 +190,8 @@ def main():
 	def run1(sleeptime, lock):
 		while True:
 			lock.acquire()
-			compare() #The main Arbitrage function
+			compare() 
+			#The main Arbitrage function
 			print "Round completed sleeping for 15 seconds"
 			lock.release()
 			time.sleep(sleeptime)
