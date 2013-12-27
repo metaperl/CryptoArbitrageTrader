@@ -163,7 +163,7 @@ def compare():
 					#printouts for debugging
 					print "price on " + exc[m] + " for " + curr[n] + " is " + str(sprice) + " BTC"
 					print "price on " + exc[k] + " for " + curr[n] + " is " + str(bprice) + " BTC"
-					print "executing trade at a win per 1" + curr[n] + " of " + str(round(((str(sprice) * FEE)-(str(bprice) * Diff * FEE)),8)) + "BTC"
+					print "executing trade at a win per 1" + curr[n] + " of " + str(round(((sprice * FEE)-(bprice * Diff * FEE)),8)) + "BTC"
 				else:
 					try:
 						sprice = getS(exc[k], curr[n], "btc")
